@@ -4,7 +4,7 @@ from flask import Flask
 import os
 
 app = Flask(__name__)
-WHO = os.environ['WHO']
+WHO = os.environ.get('WHO')
 
 @app.route('/')
 def hello_world():
